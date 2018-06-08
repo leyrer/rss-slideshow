@@ -44,7 +44,7 @@ do {
 			my $t = $1;
 			my $url1 = new URI::URL $t;
 			
-			if($url1->path =~ /(gif|jpg|jpeg|png|avi|mp4|mov)$/gi ) {
+			if($url1->epath =~ /(gif|jpg|jpeg|png|avi|mp4|mov)$/gi ) {
 				&fetch_image($t);
 			} elsif ($t =~ /imgur\.com/i ) {
 				imgur($t);
