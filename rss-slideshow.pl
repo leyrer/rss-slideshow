@@ -11,7 +11,15 @@ use File::Temp;
 use Digest::MD5::File qw(file_md5_hex file_md5_base64);
 use Data::Dumper;
 
-my $cache_path = '/home/leyrer/projects/rss-slideshow/cache';
+my $cache_path = '';
+
+if ( $#ARGV >= 1 ) {
+	$cache_path = $ARGV[1];
+	print "JO $cache_path<\n";
+} else {
+	$cache_path = '/home/leyrer/projects/rss-slideshow/cache';
+	print "NO\n";
+}
 
 my $num_entries = 0;
 my $count = 0;
