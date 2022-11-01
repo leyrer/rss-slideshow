@@ -1,4 +1,3 @@
-# rss-slideshow
+# Moved to GitLab
 
-Fetch images from a (reddit) url that returns a random rss feed.
-
+https://gitlab.com/leyrer/rss-slideshow
